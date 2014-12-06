@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns:android   = "http://schemas.android.com/apk/res/android"
+        id        = "com.pdaily.technician.app"
+        version   = "2.0.1">
+    <name>Technician</name>
+
+    <description>
+        Polymer built app
+    </description>
+
+    <author href="http://pdaily.me" email="pat@pdaily.me">
+        pDaily
+    </author>
+ 
+    <!-- core plugins -->
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+
+    <gap:config-file platform="android" parent="/manifest">
+        <supports-screens android:xlargeScreens="true" android:largeScreens="true" android:smallScreens="true" />
+    </gap:config-file>
+
+
+    <gap:config-file platform="android" parent="/manifest" mode="delete">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+    </gap:config-file>
+
+    <!-- universal preferences -->
+    <preference name="phonegap-version"           value="3.6.3" />
+    <preference name="orientation"                value="default" />
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="load-url-timeout"           value="1000" />
+
+    <!-- android preferences -->
+    <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-minSdkVersion"      value="19" />
+    <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+    <preference name="android-installLocation"    value="auto" />
+    <preference name="android-targetSdkVersion"   value="21" />
+    <preference name="android-maxSdkVersion"       value="23" />
+    <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+    <preference name="backupwebstorage" value="none"/>
+</widget>

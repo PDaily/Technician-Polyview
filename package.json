@@ -1,0 +1,23 @@
+{
+  "name": "technician-polyview",
+  "version": "0.0.1",
+  "description": "Web client built with Polymer to be used within a Rails & PhoneGap enviroment",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:PDaily/Technician-Polyview.git"
+  },
+  "author": "Pat (pat@pdaily.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PDaily/Technician-Polyview/issues"
+  },
+  "homepage": "https://github.com/PDaily/Technician-Polyview",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.9.0"
+  }
+}
